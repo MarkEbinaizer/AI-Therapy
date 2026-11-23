@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Moods from "./Moods.jsx";
+import Journal from "./Journal.jsx";
 
 const API = "http://localhost:5000/api";
 
@@ -54,6 +55,7 @@ export default function App() {
         <p>You're logged in as {user.email}</p>
         <button onClick={logout}>Log out</button>
         <Moods />
+        <Journal />
       </div>
     );
   }

@@ -4,6 +4,7 @@ import dotenv from "dotenv";
 import pool from "./db.js";
 import authRoutes from "./routes/auth.js";
 import moodRoutes from "./routes/moods.js";
+import journalRoutes from "./routes/journal.js";
 
 dotenv.config();
 
@@ -22,4 +23,5 @@ app.get("/api/health", async (req, res) => {
 
 app.use("/api/auth", authRoutes);
 app.use("/api/moods", moodRoutes);
+app.use("/api/journal", journalRoutes);
 app.listen(process.env.PORT || 5000, () => console.log("Server running"));

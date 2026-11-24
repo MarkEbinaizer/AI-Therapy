@@ -5,6 +5,7 @@ import pool from "./db.js";
 import authRoutes from "./routes/auth.js";
 import moodRoutes from "./routes/moods.js";
 import journalRoutes from "./routes/journal.js";
+import exerciseRoutes from "./routes/exercises.js";
 
 dotenv.config();
 
@@ -24,4 +25,5 @@ app.get("/api/health", async (req, res) => {
 app.use("/api/auth", authRoutes);
 app.use("/api/moods", moodRoutes);
 app.use("/api/journal", journalRoutes);
+app.use("/api/exercises", exerciseRoutes);
 app.listen(process.env.PORT || 5000, () => console.log("Server running"));

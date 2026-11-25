@@ -2,6 +2,8 @@ import { useState } from "react";
 import Moods from "./Moods.jsx";
 import Journal from "./Journal.jsx";
 import Exercises from "./Exercises.jsx";
+import Meditations from "./Meditations.jsx";
+import Support from "./Support.jsx";
 
 const API = "http://localhost:5000/api";
 
@@ -58,6 +60,8 @@ export default function App() {
         <Moods />
         <Journal />
         <Exercises/>
+        <Meditations />
+        <Support />
       </div>
     );
   }

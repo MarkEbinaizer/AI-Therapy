@@ -8,6 +8,7 @@ import journalRoutes from "./routes/journal.js";
 import exerciseRoutes from "./routes/exercises.js";
 import meditationRoutes from "./routes/meditations.js";
 import supportRoutes from "./routes/support.js";
+import homeworkRoutes from "./routes/homework.js";
 
 dotenv.config();
 
@@ -30,4 +31,5 @@ app.use("/api/journal", journalRoutes);
 app.use("/api/exercises", exerciseRoutes);
 app.use("/api/meditations", meditationRoutes);
 app.use("/api/support", supportRoutes);
+app.use("/api/homework", homeworkRoutes);
 app.listen(process.env.PORT || 5000, () => console.log("Server running"));

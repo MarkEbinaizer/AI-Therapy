@@ -5,6 +5,7 @@ import Exercises from "./Exercises.jsx";
 import Meditations from "./Meditations.jsx";
 import Support from "./Support.jsx";
 import Homework from "./Homework.jsx";
+import Report from "./Report.jsx";
 
 const API = "http://localhost:5000/api";
 
@@ -64,6 +65,7 @@ export default function App() {
         <Meditations />
         <Support />
         <Homework />
+        <Report />
       </div>
     );
   }
